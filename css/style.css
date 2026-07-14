@@ -1,23 +1,23 @@
 /* ==========================================================
-   KingNerd Legal Center
-   Modern Responsive Dark Theme
+   King Nerd Software Legal Center
+   Modern Responsive Light Theme
    ========================================================== */
 
 :root {
 
-    --bg: #0f1117;
-    --card: #1b1d24;
-    --card-hover: #242733;
+    --bg: #f4f7fb;
+    --card: #ffffff;
+    --card-hover: #f8fbff;
 
     --primary: #3b82f6;
-    --primary-hover: #60a5fa;
+    --primary-hover: #2563eb;
 
-    --text: #f3f4f6;
-    --secondary: #b8bcc6;
+    --text: #172033;
+    --secondary: #52657d;
 
-    --border: #2b2f3a;
+    --border: #d8e4f1;
 
-    --shadow: rgba(0,0,0,.35);
+    --shadow: rgba(30, 64, 110, .10);
 
     --radius: 16px;
 
@@ -129,8 +129,8 @@ nav .brand-logo:hover {
 
 .brand-logo img {
     display: block;
-    width: 88px;
-    height: 88px;
+    width: 64px;
+    height: 64px;
     object-fit: contain;
 }
 
@@ -188,7 +188,7 @@ nav a[aria-current="page"] {
 
 .app-card {
     padding: 20px;
-    background: rgba(255, 255, 255, .03);
+    background: #f5f9ff;
     border: 1px solid var(--border);
     border-radius: 12px;
 }
@@ -205,7 +205,7 @@ h1 {
 
     margin-bottom: 20px;
 
-    color: white;
+    color: #102a43;
 
 }
 
@@ -269,7 +269,7 @@ a:hover {
 
 strong {
 
-    color: white;
+    color: #102a43;
 
 }
 
@@ -295,7 +295,7 @@ footer {
 
 code {
 
-    background: #2d2f36;
+    background: #e8f0fa;
 
     padding: 3px 8px;
 
@@ -339,7 +339,7 @@ td {
 
 tr:hover {
 
-    background: rgba(255,255,255,.03);
+    background: #f3f8ff;
 
 }
 
@@ -485,8 +485,16 @@ hr {
 
 ::-webkit-scrollbar-track{
 
-    background:#171922;
+    background:#eaf1f8;
 
+}
+
+.contact-logo {
+    display: block;
+    width: min(190px, 100%);
+    height: auto;
+    margin: 24px auto 0;
+    border-radius: 12px;
 }
 
 /* ========================================================== */
