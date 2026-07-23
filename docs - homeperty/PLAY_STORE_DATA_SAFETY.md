@@ -84,9 +84,13 @@ Firebase Authentication, and Storage/Firestore all use HTTPS/TLS).
   available on request via the support email.
 
 **Account deletion** (Play requirement once accounts exist): the in-app
-path above deletes both the data and the account in one action. For the
-Play listing's "account deletion" URL field, link the hosted privacy
-policy section describing it, plus the support email as fallback.
+path above deletes both the data and the account in one action. Two
+dedicated, hosted pages now exist for the two URL fields Play's Data
+Safety form asks for — see `PLAY_STORE_CHECKLIST.md` and
+`GOOGLE_PLAY_CONSOLE_GUIDE.md` §3 for exactly which URL goes in which
+field:
+- Delete account URL → `https://kingnerd88.github.io/kingnerd-legal/homeperty-delete-account.html`
+- Delete data URL → `https://kingnerd88.github.io/kingnerd-legal/homeperty-delete-data.html`
 
 **Target audience**: adults (property management / finance tools). Not a
 children's app.

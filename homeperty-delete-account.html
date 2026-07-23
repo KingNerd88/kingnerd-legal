@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How to permanently delete your HomePerty account and all associated cloud data — in-app steps and an email fallback, what is deleted, what is retained, and how long it takes.">
+  <title>Delete Your HomePerty Account &amp; Data | KingNerd</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="site-header"><img src="images/Website header design SLIM2.png" alt="KingNerd — Windows and Android applications"></header>
+  <nav aria-label="Primary navigation">
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="disclaimer.html">Disclaimers</a>
+    <a href="support.html">Support</a>
+  </nav>
+  <main>
+    <section class="card hero">
+      <p class="eyebrow">KingNerd · HomePerty</p>
+      <h1>Delete Your HomePerty Account &amp; Data</h1>
+      <p class="doc-meta">Effective date: 23 July 2026</p>
+      <p class="lead">This page explains how to permanently delete your HomePerty account and every piece of cloud
+        data associated with it. HomePerty is published by <strong>KingNerd (Gabriel)</strong>, an independent
+        developer based in Romania. Contact: <a href="mailto:kingnerdishere@gmail.com">kingnerdishere@gmail.com</a>.</p>
+      <p>This page is part of the <a href="homeperty-privacy.html">HomePerty Privacy Policy</a>, which it
+        supplements with step-by-step deletion instructions. If you only want to delete some of your data while
+        keeping your account, see <a href="homeperty-delete-data.html">Delete Your HomePerty Data</a> instead.</p>
+      <p class="muted">HomePerty documents: <a href="homeperty.html">Overview</a> ·
+        <a href="homeperty-privacy.html">Privacy Policy</a> ·
+        <a href="homeperty-terms.html">Terms of Service</a> ·
+        <strong>Delete Account &amp; Data</strong> ·
+        <a href="homeperty-delete-data.html">Delete My Data</a></p>
+    </section>
+
+    <section class="card">
+      <h2>Who this page is for</h2>
+      <p>Use these steps if you want to <strong>permanently close your HomePerty account</strong> — this deletes
+        your Google Sign-In identity as known to HomePerty (via Firebase Authentication) together with every Cloud
+        Backup version and its metadata stored on our servers.</p>
+      <p>An account only exists in HomePerty if you have signed in with Google to use Cloud Backup. If you have
+        never signed in, there is no account or cloud data to delete — everything you enter is already local to
+        your device only, and you can remove it at any time by uninstalling the app or using Settings → Reset app
+        (see <a href="homeperty-delete-data.html">Delete Your HomePerty Data</a>).</p>
+    </section>
+
+    <section class="card">
+      <h2>Option 1 — Delete in the app (fastest, takes effect immediately)</h2>
+      <ol>
+        <li>Open HomePerty on your device.</li>
+        <li>Go to <strong>Settings</strong>.</li>
+        <li>Tap <strong>Cloud backup</strong>.</li>
+        <li>Tap <strong>Delete cloud data &amp; account</strong>.</li>
+        <li>Confirm when prompted.</li>
+      </ol>
+      <p>This immediately and permanently deletes every backup version, the backup metadata, and your Firebase
+        Authentication account (name, email address, profile photo, and account identifier) associated with
+        HomePerty. There is no waiting period, and the action cannot be undone — if you sign in again afterward,
+        it creates a brand-new account with no connection to the deleted data.</p>
+      <p><strong>This does not touch the data stored on your device.</strong> Properties, tenants, leases,
+        finances, documents, photos, and voice notes on your phone remain until you separately clear them — see
+        <a href="homeperty-delete-data.html">Delete Your HomePerty Data</a> for how to wipe local data too.</p>
+    </section>
+
+    <section class="card">
+      <h2>Option 2 — Request deletion by email (if you can't use the app)</h2>
+      <p>If you've uninstalled HomePerty, lost access to your device, or otherwise can't reach Settings, you can
+        request account deletion directly:</p>
+      <ol>
+        <li>Email <a href="mailto:kingnerdishere@gmail.com?subject=Delete%20my%20HomePerty%20account">kingnerdishere@gmail.com</a>
+          with the subject <strong>"Delete my HomePerty account"</strong>.</li>
+        <li>Send it from (or reference) the same email address associated with the Google account you signed in
+          with, so we can verify it's you.</li>
+        <li>State clearly that you want your HomePerty account and all associated cloud data deleted.</li>
+      </ol>
+      <p>Once we've verified you control the account, we perform the same deletion described in Option 1 from our
+        side — every backup version, its metadata, and the Firebase Authentication account are permanently
+        removed.</p>
+    </section>
+
+    <section class="card">
+      <h2>What gets deleted, and what's retained</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>What happens</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Cloud Backup archives (all retained versions)</td><td>Permanently deleted, immediately</td></tr>
+          <tr><td>Backup metadata (dates, sizes, app version, device model)</td><td>Permanently deleted, immediately</td></tr>
+          <tr><td>Firebase Authentication account (name, email, photo, account ID)</td><td>Permanently deleted, immediately</td></tr>
+          <tr><td>On-device local data (properties, tenants, finances, documents, photos, voice notes)</td>
+            <td>Not affected — delete separately via Settings → Reset app or by uninstalling</td></tr>
+          <tr><td>License key redemption record</td><td>Not personal account data (a key string and a timestamp,
+            not linked to your name or email); retained for fraud-prevention and audit purposes for as long as
+            reasonably necessary</td></tr>
+          <tr><td>Records we're required to keep for legal compliance or active abuse/fraud investigations</td>
+            <td>Retained only as long as legally necessary, then deleted</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>How long it takes</h2>
+      <ul>
+        <li><strong>In-app deletion (Option 1):</strong> immediate and permanent.</li>
+        <li><strong>Email requests (Option 2):</strong> completed within 30 days of us verifying you control the
+          account, consistent with the response time described in our
+          <a href="homeperty-privacy.html">Privacy Policy</a> for data-subject rights requests.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Related documents</h2>
+      <ul>
+        <li><a href="homeperty-delete-data.html">Delete Your HomePerty Data</a> — delete some or all of your data
+          without closing your account.</li>
+        <li><a href="homeperty-privacy.html">HomePerty Privacy Policy</a> — full details on what we collect, why,
+          and your rights.</li>
+        <li><a href="homeperty-terms.html">HomePerty Terms of Service</a>.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <p>Questions about account deletion or your data:
+        <a href="mailto:kingnerdishere@gmail.com?subject=HomePerty%20Account%20Deletion">kingnerdishere@gmail.com</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer-brand"><strong>KingNerd</strong> — The Kingdom of Smart Software</p>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="disclaimer.html">Disclaimers</a>
+      <a href="support.html">Support</a>
+    </nav>
+    <p class="footer-legal">© 2026 KingNerd · Romania · <a href="mailto:kingnerdishere@gmail.com">kingnerdishere@gmail.com</a></p>
+  </footer>
+</body>
+
+</html>

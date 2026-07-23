@@ -61,8 +61,10 @@
 - [ ] **Account deletion**: Play Console → App content → Data safety now
       requires either an in-app account-deletion path or a web link if
       accounts exist. Provide both: Settings → Cloud backup → Delete cloud
-      data & account (in-app, implemented), and mention the support email
-      as a fallback in the Play listing's account deletion field
+      data & account (in-app, implemented), plus the two hosted pages for
+      the form's URL fields (see `GOOGLE_PLAY_CONSOLE_GUIDE.md` §3):
+      - Delete account URL: `https://kingnerd88.github.io/kingnerd-legal/homeperty-delete-account.html`
+      - Delete data URL: `https://kingnerd88.github.io/kingnerd-legal/homeperty-delete-data.html`
 - [ ] Target audience: 18+
 - [ ] Ads declaration: contains no ads
 - [ ] Countries: start with your market(s), expand later

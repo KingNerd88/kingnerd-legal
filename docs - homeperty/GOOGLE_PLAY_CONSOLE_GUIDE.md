@@ -13,7 +13,12 @@ duplicated: `PRIVACY_POLICY.md`, `TERMS_OF_SERVICE.md`,
 
 **Before you start**: host `PRIVACY_POLICY.md` and `TERMS_OF_SERVICE.md`
 somewhere public (GitHub Pages is fine) — several forms below need a
-live URL, not a repo path.
+live URL, not a repo path. These are already hosted, along with two
+dedicated deletion-instructions pages, at:
+- Privacy Policy → `https://kingnerd88.github.io/kingnerd-legal/homeperty-privacy.html`
+- Terms of Service → `https://kingnerd88.github.io/kingnerd-legal/homeperty-terms.html`
+- Delete account URL → `https://kingnerd88.github.io/kingnerd-legal/homeperty-delete-account.html`
+- Delete data URL → `https://kingnerd88.github.io/kingnerd-legal/homeperty-delete-data.html`
 
 ---
 
@@ -152,13 +157,48 @@ Notes on judgment calls:
 
 ### Step 4 — Data usage and handling
 
+This step is where Play's "Data safety" form (App content → Data safety
+→ Data collection and security) actually asks for the deletion URLs
+shown in its own screenshot: a required **"Delete account URL"** field,
+plus an optional **"Do you provide a way for users to request that
+some or all of their data is deleted, without requiring them to delete
+their account?"** question with its own **"Delete data URL"** field.
+Answer them like this:
+
+- **Add a link that users can use to request that their account and
+  associated data is deleted** → **Delete account URL:**
+  ```
+  https://kingnerd88.github.io/kingnerd-legal/homeperty-delete-account.html
+  ```
+  This page names HomePerty/KingNerd, gives the exact in-app steps
+  (Settings → Cloud backup → Delete cloud data & account), the email
+  fallback, and a table of what's deleted vs. retained — matching
+  Play's three bullet requirements for this field (refers to the app,
+  features the deletion steps prominently, and specifies what's
+  deleted/kept and any retention period).
+
+- **Do you provide a way for users to request that some or all of
+  their data is deleted, without requiring them to delete their
+  account?** → **Yes**, then **Delete data URL:**
+  ```
+  https://kingnerd88.github.io/kingnerd-legal/homeperty-delete-data.html
+  ```
+  This is true for HomePerty: users can delete individual records
+  in-app, wipe all local data via Settings → Reset app while staying
+  signed in, or email support to have only their cloud backups removed
+  while keeping the account. The hosted page documents all three paths.
+
 - **Do you provide a way for users to request that their data is
-  deleted?** → **Yes.**
-  - Link: your hosted `PRIVACY_POLICY.md` URL (it documents both the
-    in-app path — Settings → Cloud backup → Delete cloud data & account
-    — and the support-email fallback).
+  deleted?** (the general Step-4 question, distinct from the two URL
+  fields above) → **Yes.**
+  - Link: either hosted deletion page works here, but the
+    `homeperty-delete-account.html` URL above is the more complete
+    answer since it also links onward to the data-only page.
 - **Is your data collection and handling described in a privacy
-  policy?** → **Yes** → paste the same hosted Privacy Policy URL.
+  policy?** → **Yes** → paste the hosted Privacy Policy URL:
+  ```
+  https://kingnerd88.github.io/kingnerd-legal/homeperty-privacy.html
+  ```
 
 ### Step 5 — Preview
 
