@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HomePerty Privacy Policy: local-first data storage, optional Google Sign-In, automatic Firebase Cloud Backup, encryption, retention, deletion, and your GDPR rights.">
+  <title>HomePerty Privacy Policy | KingNerd</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="site-header"><img src="images/Website header design SLIM2.png" alt="KingNerd — Windows and Android applications"></header>
+  <nav aria-label="Primary navigation">
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="disclaimer.html">Disclaimers</a>
+    <a href="support.html">Support</a>
+  </nav>
+  <main>
+    <section class="card hero">
+      <p class="eyebrow">KingNerd · HomePerty</p>
+      <h1>HomePerty Privacy Policy</h1>
+      <p class="doc-meta">Effective date: 23 July 2026</p>
+      <p class="lead">HomePerty ("the app", "we", "us", "our") is published by KingNerd (Gabriel), an independent
+        developer based in Romania. Contact: <a href="mailto:kingnerdishere@gmail.com">kingnerdishere@gmail.com</a>.</p>
+      <p>This is HomePerty's own, complete Privacy Policy. It supplements and, where it differs, takes precedence
+        over the company-wide <a href="privacy.html">KingNerd Privacy Policy</a> for anything relating to HomePerty.
+        See also the <a href="homeperty-terms.html">HomePerty Terms of Service</a>.</p>
+      <p class="muted">HomePerty documents: <a href="homeperty.html">Overview</a> ·
+        <strong>Privacy Policy</strong> ·
+        <a href="homeperty-terms.html">Terms of Service</a></p>
+    </section>
+
+    <section class="card">
+      <h2>The short version</h2>
+      <ul>
+        <li><strong>By default, everything stays on your phone.</strong> No account, no cloud, no analytics, no
+          ads — ever.</li>
+        <li><strong>Pro includes automatic Cloud Backup:</strong> sign in with Google once, and the app keeps the
+          last 10 versions of your data backed up to your own private space in our Firebase (Google Cloud) project
+          — automatically, with nothing to configure. It exists for backup, restore, device migration, and disaster
+          recovery.</li>
+        <li>Backups are <strong>encrypted in transit (TLS) and at rest</strong> on Google's infrastructure, and
+          security rules ensure <strong>only your signed-in account can access your backups</strong>.</li>
+        <li>If you'd rather your data never leave your phone, simply don't sign in — the app is fully functional
+          without it.</li>
+        <li>We never sell your data and never use it for advertising.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Data the app stores locally</h2>
+      <p>Everything you enter — properties, tenants, leases, finances, documents, photos, voice notes, calendar
+        entries, notes — is stored locally on your device in the app's private storage. The local database is
+        always the source of truth; the cloud only ever holds backup copies of it. If you never sign in (the
+        default), the device copy is the only copy that exists; we never receive or see it.</p>
+    </section>
+
+    <section class="card">
+      <h2>Accounts &amp; Google Sign-In</h2>
+      <p>An account is <strong>optional</strong>. You only need one for Cloud Backup. Signing in currently uses
+        <strong>Google</strong>, via <strong>Firebase Authentication</strong>; other sign-in options may be added in
+        a future update, and this policy will be revised when that happens.</p>
+      <p>When you sign in, we (via Firebase Authentication) receive:</p>
+      <ul>
+        <li>Your name, email address, and profile photo, as provided by Google.</li>
+        <li>A unique account identifier (UID) used to key your backups so that only your account can access them.</li>
+      </ul>
+      <p>Signing in by itself uploads none of your app data (automatic backup additionally requires Pro). Using
+        Google Sign-In also means Google processes your authentication request under its own terms — see
+        <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+    </section>
+
+    <section class="card">
+      <h2>Cloud Backup (included with Pro)</h2>
+      <p>When you have Pro and a connected Google account, the app automatically backs up your data — after
+        meaningful changes, when you leave the app, and at most daily as a safety catch-up. There are no backup
+        passwords, no buttons, and no settings to maintain.</p>
+      <ul>
+        <li><strong>What is stored:</strong> compressed backup archives of your app data — database, settings,
+          photos, documents, and voice notes — plus a small metadata record per backup (date, size, app version,
+          property count, device model).</li>
+        <li><strong>Versioning:</strong> the last <strong>10 backup versions</strong> are retained; older versions
+          are deleted automatically. You can restore any retained version from Settings → Cloud backup
+          (protection against accidental deletions or mistakes).</li>
+        <li><strong>Where it's hosted:</strong> Firebase Cloud Storage and Cloud Firestore (metadata only), on
+          Google Cloud infrastructure in the region configured for our Firebase project (EU, <code>europe-west</code>).</li>
+        <li><strong>Security:</strong> transferred exclusively over HTTPS/TLS and encrypted at rest by
+          Google-managed encryption. Server-side Firebase Security Rules restrict every read and write to your own
+          authenticated account — no other user can ever access your backups.</li>
+        <li><strong>Who can access it:</strong> you, from any device where you sign in with the same Google account.
+          We (the developer) technically administer the Firebase project and can access backup files
+          <strong>only</strong> for customer support you request, abuse prevention, or legal compliance — never for
+          marketing, profiling, or any other purpose. Support-assisted recovery is possible after we verify you
+          control the account.</li>
+        <li><strong>How long we keep it:</strong> up to 10 versions, rolling, while your account exists. If Pro
+          lapses, existing backups are retained for a grace period (up to 30 days) in case Pro is restored, after
+          which they may be deleted. We may also delete backups of long-inactive accounts (with notice where
+          feasible).</li>
+        <li><strong>Deleting it:</strong> Settings → Cloud backup → <strong>Delete cloud data &amp; account</strong>
+          permanently removes all backup versions, their metadata, and the sign-in account itself, in one in-app
+          action. <strong>Uninstalling the app does not delete your cloud backups</strong> — use the in-app deletion
+          first, or email us.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Data that leaves your device</h2>
+      <ol>
+        <li><strong>Google Maps</strong> — map tiles and geocoding requests go to Google when you use map features.
+          Google's privacy policy applies.</li>
+        <li><strong>License keys</strong> — redeeming or re-validating a Pro license key sends the key string over
+          HTTPS to our licensing endpoint. No personal information accompanies it.</li>
+        <li><strong>Google Sign-In</strong> — only if you choose to sign in, as described above.</li>
+        <li><strong>Cloud Backup</strong> — only for Pro users with a connected account: the backup archives and
+          metadata described above.</li>
+        <li><strong>Backups and exports you share</strong> — local encrypted backups, PDFs, CSVs, and ZIPs leave the
+          device only through the Android share sheet, to a destination you choose.</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>Permissions</h2>
+      <ul>
+        <li><strong>Camera / photos</strong> — scanning receipts and documents, property photos.</li>
+        <li><strong>Location</strong> — only to show your position on the map picker (optional).</li>
+        <li><strong>Microphone</strong> — voice notes on maintenance tickets.</li>
+        <li><strong>Notifications</strong> — local reminders (rent due, lease expiry, backups).</li>
+        <li><strong>Biometrics</strong> — unlocking the app lock; biometric data never leaves the Android system
+          APIs.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Data safety summary (Google Play)</h2>
+      <p>Declared as collected because the underlying capability exists in the app; every row is genuinely avoidable
+        by never signing in to a Google account.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Data type</th>
+            <th>Collected</th>
+            <th>Shared</th>
+            <th>Purpose</th>
+            <th>Optional</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Name</td><td>Yes (sign-in only)</td><td>No</td><td>Account management</td><td>Yes</td></tr>
+          <tr><td>Email address</td><td>Yes (sign-in only)</td><td>No</td><td>Account management</td><td>Yes</td></tr>
+          <tr><td>User photo</td><td>Yes (sign-in only)</td><td>No</td><td>Account management (avatar)</td><td>Yes</td></tr>
+          <tr><td>Approximate / precise location</td><td>Yes (map picker, on-device use)</td><td>No</td><td>App functionality</td><td>Yes</td></tr>
+          <tr><td>Photos and videos</td><td>Yes (Pro Cloud Backup only)</td><td>No</td><td>App functionality (backup/restore)</td><td>Yes</td></tr>
+          <tr><td>Files and docs</td><td>Yes (Pro Cloud Backup only)</td><td>No</td><td>App functionality (backup/restore)</td><td>Yes</td></tr>
+          <tr><td>Financial info</td><td>Yes (Pro Cloud Backup only)</td><td>No</td><td>App functionality (backup/restore)</td><td>Yes</td></tr>
+          <tr><td>Audio (voice notes)</td><td>Yes (Pro Cloud Backup only)</td><td>No</td><td>App functionality (backup/restore)</td><td>Yes</td></tr>
+          <tr><td>Device or other IDs</td><td>No</td><td>No</td><td>—</td><td>—</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Encryption in transit:</strong> yes — Maps, licensing, Firebase Authentication, and Storage/Firestore
+        traffic all use HTTPS/TLS.</p>
+      <p><strong>Encryption at rest:</strong> yes. On-device, sensitive values (PIN hash, license) live in
+        Android Keystore-backed encrypted storage, and local backup exports are AES-256 encrypted with a user
+        passphrase. In the cloud, Firebase Storage and Firestore encrypt all data at rest with Google-managed
+        encryption.</p>
+      <p><strong>Data deletion:</strong> local data can be removed via Settings → Reset app or by uninstalling.
+        Cloud data and the account can be removed in one action via Settings → Cloud backup →
+        <strong>Delete cloud data &amp; account</strong>, or by emailing us.</p>
+      <p>HomePerty contains no advertising SDK, no analytics-for-advertising SDK, and does not use an advertising
+        ID. We do not sell user data to anyone.</p>
+    </section>
+
+    <section class="card">
+      <h2>Data processing &amp; your rights (GDPR / similar laws)</h2>
+      <p>For users in the EU/EEA, UK, and jurisdictions with comparable laws:</p>
+      <ul>
+        <li><strong>Controller:</strong> KingNerd (Gabriel), contact
+          <a href="mailto:kingnerdishere@gmail.com">kingnerdishere@gmail.com</a>, is the data controller for the
+          account data and cloud backups described above. For data that never leaves your device, no processing by
+          us takes place at all.</li>
+        <li><strong>Processor:</strong> Google Ireland Limited / Google LLC (Firebase, Google Cloud) processes
+          account data and stores backups on our behalf under the
+          <a href="https://cloud.google.com/terms/data-processing-addendum">Google Cloud Data Processing
+            Addendum</a>. Data is hosted in the EU (<code>europe-west</code>); where Google transfers data
+          internationally, it relies on the EU Standard Contractual Clauses and equivalent safeguards.</li>
+      </ul>
+      <table>
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Purpose</th>
+            <th>Legal basis</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Google account name, email, photo, UID</td><td>Operate your sign-in and key your backups to your account</td><td>Performance of a contract (Art. 6(1)(b))</td></tr>
+          <tr><td>Backup archives (your app content)</td><td>Provide the automatic backup/restore service included with Pro</td><td>Performance of a contract (Art. 6(1)(b))</td></tr>
+          <tr><td>Backup metadata (dates, sizes, device model)</td><td>Show backup status; version management; retention</td><td>Performance of a contract (Art. 6(1)(b))</td></tr>
+          <tr><td>License key string</td><td>Validate Pro entitlement</td><td>Legitimate interest (Art. 6(1)(f)) — anti-fraud</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Your rights:</strong> access, rectification, erasure, restriction, data portability, and objection.
+        Most are self-service: your data is readable and exportable in-app (portability), and erasure is
+        Settings → Cloud backup → Delete cloud data &amp; account. For anything else, email us; we respond within
+        30 days. You also have the right to lodge a complaint with your supervisory authority.</p>
+      <p><strong>No profiling, no automated decision-making, no marketing use.</strong> Backup contents are
+        processed only as opaque archives to store and return them to you.</p>
+    </section>
+
+    <section class="card">
+      <h2>Data deletion — summary</h2>
+      <ul>
+        <li><strong>Local data:</strong> uninstall the app, or Settings → Reset app.</li>
+        <li><strong>Cloud backups + account:</strong> Settings → Cloud backup → Delete cloud data &amp; account
+          (or email us). Uninstalling alone does not delete the cloud copies.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Children</h2>
+      <p>HomePerty is a financial/productivity tool intended for adults (18+). It is not directed at children, and
+        we do not knowingly collect personal information from children.</p>
+    </section>
+
+    <section class="card">
+      <h2>Changes to this policy</h2>
+      <p>We may update this policy; material changes will be reflected in the app's About screen and this
+        document's effective date. See also our <a href="homeperty-terms.html">HomePerty Terms of Service</a> for
+        subscription and account terms.</p>
+    </section>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <p>Questions about this Privacy Policy or your data:
+        <a href="mailto:kingnerdishere@gmail.com?subject=HomePerty%20Privacy">kingnerdishere@gmail.com</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer-brand"><strong>KingNerd</strong> — The Kingdom of Smart Software</p>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="disclaimer.html">Disclaimers</a>
+      <a href="support.html">Support</a>
+    </nav>
+    <p class="footer-legal">© 2026 KingNerd · Romania · <a href="mailto:kingnerdishere@gmail.com">kingnerdishere@gmail.com</a></p>
+  </footer>
+</body>
+
+</html>

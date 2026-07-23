@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HomePerty app-specific legal information: local-first data storage, optional Google Sign-In, automatic Cloud Backup on Firebase, data safety, permissions, and subscriptions.">
+  <title>HomePerty | KingNerd</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="site-header"><img src="images/Website header design SLIM2.png" alt="KingNerd — Windows and Android applications"></header>
+  <nav aria-label="Primary navigation">
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="disclaimer.html">Disclaimers</a>
+    <a href="support.html">Support</a>
+  </nav>
+  <main>
+    <section class="card hero">
+      <p class="eyebrow">KingNerd · App legal information</p>
+      <h1>HomePerty</h1>
+      <p class="doc-meta">Effective date: 23 July 2026</p>
+      <p class="lead">HomePerty is an Android property-management app for landlords and short-term-rental hosts —
+        properties, tenants, rent, expenses, maintenance, documents, and reports, all in one place. HomePerty is
+        built local-first: by default, all of your data stays on your device.</p>
+      <p>Because HomePerty offers an optional account, a paid Pro tier, and an automatic cloud-backup feature,
+        it publishes its own complete Privacy Policy and Terms of Service rather than relying only on the
+        company-wide documents. Read this page together with those dedicated documents and with our company-wide
+        <a href="privacy.html">Privacy Policy</a>, <a href="terms.html">Terms of Service</a>, and
+        <a href="disclaimer.html">Disclaimers</a>. Where a HomePerty-specific document differs from a company-wide
+        document, the HomePerty-specific document applies to HomePerty.</p>
+      <p class="muted">HomePerty documents: <strong>Overview</strong> ·
+        <a href="homeperty-privacy.html">Privacy Policy</a> ·
+        <a href="homeperty-terms.html">Terms of Service</a></p>
+    </section>
+
+    <section class="card">
+      <h2>HomePerty's own legal documents</h2>
+      <p>These are the complete, app-specific documents for HomePerty. They are the authoritative source for how
+        HomePerty handles your data and the terms that govern your use of the app — this page is a summary.</p>
+      <div class="app-grid">
+        <article class="app-card">
+          <h3>Privacy Policy</h3>
+          <p>What HomePerty stores locally, what optional Google Sign-In and Cloud Backup collect, where backups are
+            hosted, encryption, retention, deletion, and your data-protection rights.</p>
+          <a class="button" href="homeperty-privacy.html">Read the Privacy Policy</a>
+        </article>
+        <article class="app-card">
+          <h3>Terms of Service</h3>
+          <p>The Free tier, Pro license keys, subscriptions and billing, Cloud Backup terms, acceptable use,
+            disclaimers, liability, and governing law for HomePerty.</p>
+          <a class="button" href="homeperty-terms.html">Read the Terms of Service</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>How HomePerty handles your data, in short</h2>
+      <ul>
+        <li><strong>By default, everything stays on your phone.</strong> No account, no cloud, no analytics, no
+          ads — ever.</li>
+        <li><strong>Pro includes automatic Cloud Backup.</strong> Sign in with Google once, and the app keeps the
+          last 10 versions of your data backed up to your own private space on Google Firebase — automatically,
+          with nothing to configure.</li>
+        <li>Backups are <strong>encrypted in transit (TLS) and at rest</strong>, and security rules ensure
+          <strong>only your signed-in account can access your backups</strong>.</li>
+        <li>If you'd rather your data never leave your phone, simply don't sign in — the app is fully functional
+          without it.</li>
+        <li>We never sell your data and never use it for advertising.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Accounts, Google Sign-In &amp; Cloud Backup</h2>
+      <p>An account is optional and is only needed for Cloud Backup. Signing in currently uses <strong>Google</strong>,
+        via <strong>Firebase Authentication</strong>. When you sign in, HomePerty receives your name, email address,
+        profile photo, and a unique account identifier (UID) used to key your backups so only your account can access
+        them. Signing in by itself uploads none of your app data — automatic backup additionally requires Pro.</p>
+      <p>For Pro users with a connected Google account, HomePerty <strong>automatically</strong> backs up your data
+        — after meaningful changes, when you leave the app, and at most daily as a safety catch-up. There are no
+        backup passwords, no buttons, and no settings to maintain.</p>
+      <ul>
+        <li><strong>What's stored:</strong> compressed backup archives (database, settings, photos, documents, voice
+          notes) plus a small metadata record per backup (date, size, app version, property count, device model).</li>
+        <li><strong>Versioning:</strong> the last <strong>10 backup versions</strong> are retained; older versions
+          are deleted automatically, and any retained version can be restored from Settings → Cloud backup.</li>
+        <li><strong>Where it's hosted:</strong> Google Firebase Cloud Storage and Cloud Firestore (metadata only),
+          on Google Cloud infrastructure in the EU (<code>europe-west</code>).</li>
+        <li><strong>Security:</strong> transferred exclusively over HTTPS/TLS and encrypted at rest by Google-managed
+          encryption. Server-side security rules restrict every read and write to your own authenticated account.</li>
+        <li><strong>Who can access it:</strong> you, from any device where you sign in with the same Google account.
+          The developer administers the Firebase project and accesses backup content only for support you request,
+          abuse prevention, or legal compliance — never for marketing or profiling.</li>
+        <li><strong>If Pro lapses:</strong> existing backups are retained for a grace period of up to 30 days in case
+          Pro is restored, after which they may be deleted. Your on-device data is never affected.</li>
+        <li><strong>Deleting it:</strong> Settings → Cloud backup → <strong>Delete cloud data &amp; account</strong>
+          permanently removes every backup version, its metadata, and the sign-in account itself, in one in-app
+          action. Uninstalling the app does not delete your cloud backups.</li>
+      </ul>
+      <p>Full details, including our legal basis for processing and your rights under GDPR and similar laws, are in
+        the <a href="homeperty-privacy.html">HomePerty Privacy Policy</a>.</p>
+    </section>
+
+    <section class="card">
+      <h2>Data safety summary</h2>
+      <p>This mirrors HomePerty's Google Play Data Safety declaration. Every row below is <strong>optional</strong> —
+        you can use HomePerty fully without triggering any of them, simply by never signing in.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Data type</th>
+            <th>Collected</th>
+            <th>Shared</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Name, email address, profile photo</td><td>Only if you sign in</td><td>No</td><td>Account management</td></tr>
+          <tr><td>Approximate / precise location</td><td>Only if you use the map picker</td><td>No</td><td>App functionality (shown, never stored as device location)</td></tr>
+          <tr><td>Photos and videos</td><td>Only for Pro users with Cloud Backup</td><td>No</td><td>App functionality (backup/restore)</td></tr>
+          <tr><td>Files and documents</td><td>Only for Pro users with Cloud Backup</td><td>No</td><td>App functionality (backup/restore)</td></tr>
+          <tr><td>Financial information</td><td>Only for Pro users with Cloud Backup</td><td>No</td><td>App functionality (backup/restore)</td></tr>
+          <tr><td>Audio (voice notes)</td><td>Only for Pro users with Cloud Backup</td><td>No</td><td>App functionality (backup/restore)</td></tr>
+          <tr><td>Device or other IDs</td><td>No</td><td>No</td><td>—</td></tr>
+        </tbody>
+      </table>
+      <p>All collected data is encrypted in transit. Data stored in the cloud is encrypted at rest by Google-managed
+        encryption; sensitive values stored on-device use Android Keystore-backed encrypted storage, and local
+        encrypted backup exports use AES-256 with a user passphrase. HomePerty contains no advertising SDK and no
+        analytics-for-advertising, and does not use an advertising ID.</p>
+    </section>
+
+    <section class="card">
+      <h2>Permissions requested</h2>
+      <ul>
+        <li><strong>Camera</strong> — scanning receipts and documents (with on-device OCR) and capturing property,
+          tenant, and maintenance photos.</li>
+        <li><strong>Location</strong> — optional, only to show your position on the map picker; a property's saved
+          address is content you enter, not collected device location.</li>
+        <li><strong>Microphone</strong> — voice notes on maintenance tickets.</li>
+        <li><strong>Notifications</strong> — local reminders (rent due, lease expiry, backup status).</li>
+        <li><strong>Biometrics</strong> — unlocking the optional app lock; biometric data never leaves the Android
+          system APIs.</li>
+      </ul>
+      <p>HomePerty does not request broad photo-library or storage permissions — photo selection uses Android's
+        privacy-preserving Photo Picker, which requires no permission grant.</p>
+    </section>
+
+    <section class="card">
+      <h2>Other network calls</h2>
+      <ul>
+        <li><strong>Google Maps / geocoding</strong> — map tiles and address lookup when you use map features.
+          Google's own privacy policy applies.</li>
+        <li><strong>License key validation</strong> — redeeming or re-validating a Pro license key sends the key
+          string over HTTPS to our licensing endpoint. No personal information accompanies it.</li>
+        <li><strong>Google Sign-In</strong> — only if you choose to sign in.</li>
+        <li><strong>Cloud Backup upload / restore / delete</strong> — only for Pro users with a connected account.</li>
+      </ul>
+      <p>No analytics SDK, no crash-reporting SDK, and no advertising SDK are included in HomePerty.</p>
+    </section>
+
+    <section class="card">
+      <h2>Free tier, Pro &amp; subscriptions</h2>
+      <ul>
+        <li><strong>Free</strong> — every feature above, for one property, forever. No account and no trial
+          countdown.</li>
+        <li><strong>Pro</strong> — unlimited properties plus automatic Cloud Backup. Unlocked by a one-time
+          license key or a subscription (monthly/yearly) through Google Play Billing, when available.</li>
+        <li>Subscription billing, auto-renewal, cancellation, and refunds are handled by Google Play under
+          <a href="https://play.google.com/intl/en-us/about/play-terms/">Google Play's own Terms of Service</a>,
+          in addition to HomePerty's Terms of Service.</li>
+      </ul>
+      <p>Full subscription, license-key, and Cloud Backup terms are in the
+        <a href="homeperty-terms.html">HomePerty Terms of Service</a>.</p>
+    </section>
+
+    <section class="card">
+      <h2>Calculators, reports &amp; important notice</h2>
+      <p>HomePerty's financial calculators, reports, analytics, and tax/depreciation tools are provided for
+        informational and organisational purposes only and are <strong>not</strong> financial, legal, accounting, or
+        tax advice. They depend on the information you enter, may contain errors, and should not be your only source
+        before making a financial, legal, or tax decision — consult a qualified professional. This supplements our
+        general <a href="disclaimer.html">Disclaimers</a>.</p>
+    </section>
+
+    <section class="card">
+      <h2>Children</h2>
+      <p>HomePerty is a financial and productivity tool intended for adults (18 and over). It is not directed at
+        children, and we do not knowingly collect personal information from children.</p>
+    </section>
+
+    <section class="card">
+      <h2>Support</h2>
+      <p>For HomePerty support, email
+        <a href="mailto:kingnerdishere@gmail.com?subject=HomePerty%20Support">kingnerdishere@gmail.com</a> with the
+        app version, your Android version, and a clear description of the issue. For your security, please do not
+        send account passwords or full financial account details. Cloud Backup recovery requests are handled after
+        we verify you control the Google account the backups belong to. See our <a href="support.html">Support</a>
+        page for general guidance.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer-brand"><strong>KingNerd</strong> — The Kingdom of Smart Software</p>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="disclaimer.html">Disclaimers</a>
+      <a href="support.html">Support</a>
+    </nav>
+    <p class="footer-legal">© 2026 KingNerd · Romania · <a href="mailto:kingnerdishere@gmail.com">kingnerdishere@gmail.com</a></p>
+  </footer>
+</body>
+
+</html>
